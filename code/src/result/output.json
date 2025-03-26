@@ -1,0 +1,22 @@
+[
+  {
+    "request_type": "Fee Payment",
+    "sub_request_type": "Ongoing Fee",
+    "extracted_fields": {
+      "amount": "$5000"
+    },
+    "duplicate": false,
+    "assigned_team": "Team I",
+    "source_text": "Fwd: Fee Payment Request Hi Team,\n\nForwarding this again as a reminder: Please process a fee payment of $5000 for deal ABC123. The payment is due by 12/31/2025.\n\nBest,\nJohn Doe\n\n-----Original Message-----\nFrom: john.doe@bankclient.com\nSent: Wed, 26 Mar 2025 10:00:00 +0000\nSubject: Fee Payment Request"
+  },
+  {
+    "request_type": "Commitment Change",
+    "sub_request_type": "Increase",
+    "extracted_fields": {
+      "amount": "$10"
+    },
+    "duplicate": false,
+    "assigned_team": "Team H",
+    "source_text": "Multiple Servicing Requests Hi Team,\n\nPlease adjust the commitment by increasing it to $10,000 for deal XYZ789. Additionally, we need to transfer $2,000 inbound for the same deal. See the attached PDF for details.\n\nRegards,\nJane Smith\n"
+  }
+]
