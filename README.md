@@ -40,3 +40,12 @@ We combined Natural Language Processing (NLP) and automation tools to create a r
 📜 NLP Libraries: Transformers, SentenceTransformers, NLTK
 🛠️ Parsing Tools: email, pdfplumber, regex
 📊 Data Processing: JSON, Scikit-learn
+
+Team Memebers 
+Dhruv Bansal
+Yash Modiwala 
+Prateek Singh 
+Vardhaman Jain 
+
+
+
