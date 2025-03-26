@@ -74,8 +74,10 @@ We leveraged natural language processing (NLP) and machine learning tools to ana
 
 👥 Team
 
-- Your Name - [GitHub](https://github.com/your-username) | [LinkedIn](https://linkedin.com/in/your-profile)  
-- Teammate 2 - [GitHub](https://github.com/teammate2) | [LinkedIn](https://linkedin.com/in/teammate2-profile)  
+- Dhruv Bansal 
+- Prateek Singh Sidhu
+- Yash Modhwadia
+- Vardhaman Jain 
 
 --- 
 
