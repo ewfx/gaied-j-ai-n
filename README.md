@@ -1,51 +1,82 @@
-📌 Project Overview
+🚀 Email Request Classifier
 
-🌟 Inspiration
+📌 Table of Contents
+- Introduction
+- Demo
+- Inspiration
+- What It Does
+- How We Built It
+- Challenges We Faced
+- How to Run
+- Tech Stack
+- Team
 
-This project was inspired by the need to automate and streamline email classification and processing in financial and business environments. Manually handling emails for different request types (e.g., adjustments, fee payments, money movement) can be time-consuming and error-prone. By leveraging AI, this project automates classification, field extraction, and routing, reducing manual effort and improving efficiency.
+🎯 Introduction
+
+The Email Request Classifier is an intelligent system designed to automatically process and categorize financial email requests. It solves the problem of manual email sorting by extracting key information and routing requests to appropriate teams, saving time and reducing human error in financial operations.
+
+🎥 Demo
+
+🔗 Live Demo: Not available  
+📹 Video Demo: Coming soon  
+🖼️ Screenshots:  
+
+**Screenshot 1: Sample Output JSON**  
+![Sample Output](https://via.placeholder.com/600x400.png?text=Sample+JSON+Output)
+
+💡 Inspiration
+
+We were inspired by the inefficiencies in manual email processing in financial institutions, where staff spend hours sorting through requests like fund transfers, fee payments, and commitment changes. Our goal was to automate this process using AI to improve accuracy and efficiency.
 
 ⚙️ What It Does
 
-The project is an AI-powered email classification system that:
-✅ Parses incoming emails (.eml format) and extracts subject, body, and attachments
-✅ Uses zero-shot classification (NLP) to determine request type & sub-request type
-✅ Extracts key fields (amount, deal name, date) using regex
-✅ Detects duplicate emails to prevent redundant processing
-✅ Assigns emails to the correct teams based on predefined routing rules
-✅ Stores structured data in a JSON file for further processing
+- Parses email files (.eml) to extract subject, body, and attachments  
+- Classifies email requests into predefined types (e.g., "Money Movement", "Fee Payment")  
+- Identifies sub-request types (e.g., "Principal", "Foreign Currency")  
+- Extracts key fields like amounts, dates, and deal names  
+- Routes requests to appropriate teams based on predefined rules  
+- Flags duplicate emails to prevent redundant processing  
 
 🛠️ How We Built It
 
-We combined Natural Language Processing (NLP) and automation tools to create a robust system:
-🔹 Python as the primary programming language
-🔹 Transformers (BART-large-mnli) for AI-based classification
-🔹 SentenceTransformers (MiniLM-L6-v2) for text embedding and similarity checks
-🔹 NLTK for text tokenization and processing
-🔹 Regex (re module) for structured field extraction
-🔹 pdfplumber to process attachments (if required)
-🔹 Sklearn (cosine similarity) to check for duplicate emails
-🔹 JSON to store structured results
+We leveraged natural language processing (NLP) and machine learning tools to analyze email content. The system uses pre-trained models for classification and custom regex patterns for field extraction, with a modular design for easy scalability.
 
 🚧 Challenges We Faced
 
-🔴 Accuracy of AI classification – Fine-tuning the model for financial terminology was challenging
-🟠 Field extraction complexity – Emails have varied formats, making regex-based extraction tricky
-🟡 Handling duplicate emails – Needed a reliable way to flag duplicates based on text similarity
-🟢 Team routing logic – Ensuring correct mapping between request types and team assignments
+- Handling varied email formats and inconsistent data presentation  
+- Fine-tuning zero-shot classification for domain-specific financial terms  
+- Ensuring accurate field extraction with regex across diverse email styles  
+- Managing dependencies and model loading times for efficient processing  
+
+🏃 How to Run
+
+1. Clone the repository  
+   ```
+   git clone https://github.com/your-repo.git
+   ```
+2. Install dependencies  
+   ```
+   pip install -r requirements.txt
+   ```
+3. Run the project  
+   ```
+   python main.py
+   ```
+   - Ensure your email files are in `/src/data/emails/`  
+   - Output will be saved to `/src/result/output.json`  
 
 🏗️ Tech Stack
 
-💻 Programming Language: Python
-🤖 AI Models: BART (Zero-shot classification), MiniLM (Embedding)
-📜 NLP Libraries: Transformers, SentenceTransformers, NLTK
-🛠️ Parsing Tools: email, pdfplumber, regex
-📊 Data Processing: JSON, Scikit-learn
+🔹 Backend: Python  
+🔹 NLP/ML: Transformers (BART), Sentence-Transformers (MiniLM)  
+🔹 Data Processing: pdfplumber, NLTK, scikit-learn  
+🔹 Other: Regular Expressions (re)  
 
-Team Memebers 
-Dhruv Bansal
-Yash Modiwala 
-Prateek Singh 
-Vardhaman Jain 
+👥 Team
 
+- Your Name - [GitHub](https://github.com/your-username) | [LinkedIn](https://linkedin.com/in/your-profile)  
+- Teammate 2 - [GitHub](https://github.com/teammate2) | [LinkedIn](https://linkedin.com/in/teammate2-profile)  
 
+--- 
 
+Feel free to customize the placeholders (e.g., GitHub links, screenshots, team names) to fit your specific project and team details! Let me know if you'd like help refining any section further.
